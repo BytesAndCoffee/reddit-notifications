@@ -1,0 +1,29 @@
+{
+  "name": "Reddit Notifications",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Chrome notifications on new reddit inbox entries",
+  "homepage_url": "http://yazdmich.pw/",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "js/jquery/jquery.min.js",
+      "src/bg/background.js"
+    ],
+    "persistent": true
+  },
+  "page_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "page action demo",
+    "default_popup": "src/page_action/page_action.html"
+  },
+  "permissions": [
+    "http://*.reddit.com/*",
+    "notifications"
+  ]
+}
